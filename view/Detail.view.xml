@@ -2,8 +2,9 @@
 	<Page class="sapUiFioriObjectPage" navButtonPress="onNavBack" showNavButton="{device>/isPhone}" title="{i18n>detailTitle}">
 		<content>
 			<ObjectHeader number="{UnitPrice}" numberUnit="{QuantityPerUnit}" title="{ProductName}">
-				<ObjectAttribute text="{UnitsInStock}"/>
-				<ObjectAttribute text="{UnitsOnOrder}"/>
+				<ObjectAttribute title="ProductId" text="{ProductID}"/>				
+				<ObjectAttribute title="Units in Stock" text="{UnitsInStock}"/>
+				<ObjectAttribute title="Units on Order" text="{UnitsOnOrder}"/>
 			</ObjectHeader>
 			<IconTabBar id="idIconTabBar" select="onDetailSelect">
 				<items>
