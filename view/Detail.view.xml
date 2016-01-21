@@ -1,10 +1,10 @@
 <mvc:View controllerName="com.test.northwind.view.Detail" xmlns:core="sap.ui.core" xmlns:mvc="sap.ui.core.mvc" xmlns="sap.m">
 	<Page class="sapUiFioriObjectPage" navButtonPress="onNavBack" showNavButton="{device>/isPhone}" title="{i18n>detailTitle}">
 		<content>
-			<ObjectHeader number="{UnitPrice}" numberUnit="{QuantityPerUnit}" title="{ProductName}">
-				<ObjectAttribute title="ProductId" text="{ProductID}"/>				
-				<ObjectAttribute title="Units in Stock" text="{UnitsInStock}"/>
-				<ObjectAttribute title="Units on Order" text="{UnitsOnOrder}"/>
+			<ObjectHeader number="{i18n>currencySymbol}{UnitPrice}" numberUnit="{QuantityPerUnit}" title="{ProductName}">
+				<ObjectAttribute text="{label_ProductID}" title="ProductId"/>
+				<ObjectAttribute text="{label_UnitsInStock}" title="Units in Stock"/>
+				<ObjectAttribute text="{labe_UnitsOnOrder}" title="Units on Order"/>
 			</ObjectHeader>
 			<IconTabBar id="idIconTabBar" select="onDetailSelect">
 				<items>
