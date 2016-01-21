@@ -157,6 +157,20 @@ sap.ui.core.UIComponent.extend("com.test.northwind.Component", {
 				}
 			}
 		}
+		// Reformat UnitPrice string to show only two decimal places
+		oModel.attachRequestCompleted(function() {
+			var NUM_DECIMAL_PLACES = 2;
+
+			//Get all objects
+			var products = this.getModel().mContexts;
+
+			// loop through the objects and round to NUM_DECIMAL_PLACE
+			for (var i in products) {
+				var product = products[i].getObject();
+				product.UnitPrice = Number(product.UnitPrice).toFixed(NUM_DECIMAL_PLACES);
+			}
+			this.getModel().updateBindings();
+		}, this);
 	},
 
 	/**

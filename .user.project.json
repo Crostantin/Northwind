@@ -22,6 +22,23 @@
         "id": 5471256,
         "displayName": "New Web Application"
       }
+    },
+    {
+      "filePath": "/Northwind/Component.js",
+      "previewMode": 1,
+      "dataMode": 1,
+      "workspace": "withoutWorkspace",
+      "ui5ActiveVersion": null,
+      "ui5VerSource": null,
+      "isDefaultVersion": 0,
+      "urlParameters": [],
+      "hashParameter": "",
+      "backendSystem": [],
+      "_metadata": {
+        "runnerId": "fiorirunner",
+        "id": 6443803,
+        "displayName": "New SAP Fiori Component on Sandbox"
+      }
     }
   ]
 }
