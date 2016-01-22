@@ -22,6 +22,6 @@
   "hcpdeploy": {
     "account": "s0015207743trial",
     "name": "northwind",
-    "lastVersionWeTriedToDeploy": "1.0.7"
+    "lastVersionWeTriedToDeploy": "1.0.8"
   }
 }
