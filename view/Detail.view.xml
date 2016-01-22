@@ -5,6 +5,7 @@
 				<ObjectAttribute text="{ProductID}" title="{i18n&gt;label_ProductID}"/>
 				<ObjectAttribute text="{UnitsInStock}" title="{i18n&gt;label_UnitsInStock}"/>
 				<ObjectAttribute text="{UnitsOnOrder}" title="{i18n&gt;label_UnitsOnOrder}"/>
+				<ObjectAttribute text="{i18n>currencySymbol}{inventoryValue}" title="{i18n>label_CurrentInventoryValue}"/>
 			</ObjectHeader>
 			<IconTabBar id="idIconTabBar" select="onDetailSelect">
 				<items>

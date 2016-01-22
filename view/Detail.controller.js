@@ -79,6 +79,16 @@ com.test.northwind.util.Controller.extend("com.test.northwind.view.Detail", {
 		var oView = this.getView();
 		oView.bindElement(sEntityPath);
 
+		// ******* BEGIN INSERTED CODE TO COMPUTE CURRENT INVENTORY VALUE *******		
+		var record = oView.getModel().getData(sEntityPath);
+		//debugger;
+		var NUM_DECIMAL_PLACES = 2;
+		var MARKUP = 0.65; //65%
+		record.inventoryValue = (Number(record.UnitPrice) - (Number(record.UnitPrice) / (1 + MARKUP))) * Number(record.UnitsInStock);
+		record.inventoryValue = Number(record.inventoryValue).toFixed(NUM_DECIMAL_PLACES);
+		oView.getModel().updateBindings();
+		// ******* END INSERTED CODE *******
+
 		var frag = this.byId("detailFragment");
 		frag.bindElement(sEntityPath + "/Supplier");
 
