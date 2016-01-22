@@ -7,8 +7,7 @@
     }
   ],
   "translation": {
-    "translationDomain": "",
-    "supportedLanguages": "en,fr,de",
+    "supportedLanguages": "de,en,fr,it",
     "defaultLanguage": "en",
     "defaultI18NPropertyFile": "i18n.properties",
     "resourceModelName": "i18n"
@@ -23,6 +22,6 @@
   "hcpdeploy": {
     "account": "s0015207743trial",
     "name": "northwind",
-    "lastVersionWeTriedToDeploy": "1.0.6"
+    "lastVersionWeTriedToDeploy": "1.0.7"
   }
 }
